@@ -7,11 +7,18 @@ let name = "Harsh"
 function App() {
   return (
     <div className = "App">
-    <h1>{name}</h1>
-    
+
     <UserDetails name="Harsh" age={23}>
-      <h1>children of Component</h1>
+      <h1>Information specific to Harsh</h1>
     </UserDetails>
+
+    <hr/>
+
+    <UserDetails name="Kush" age={23}>
+      <h1>Information specific to Kush</h1>
+      <button>Kush's button</button>
+    </UserDetails>
+
     </div>
   );
 }
