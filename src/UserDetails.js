@@ -1,20 +1,18 @@
 import React from 'react'
 
-// destructuring props when recieving in components
-function UserDetails({name, age, children}) {
-    // console.log({props})
-    // props are read only!
-
+const UserDetails = ({name, age, children}) => {
     return (
         <div>
             <h1>Name: {name}</h1>
             <h1>Age: {age}</h1>
-
-            {/* when you want to dynamically change the JSX or what is on the screen for the same Component you can use prop.children */}
             {children}
         </div>
     )
 }
 
+UserDetails.defaultProps = {
+    name: "default-name",
+    age: 18
+}
 
 export default UserDetails

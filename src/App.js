@@ -17,6 +17,10 @@ function App() {
       <button>Kush's button</button>
     </UserDetails>
 
+    <hr/>
+    
+    <UserDetails/>
+
     </div>
   );
 }
