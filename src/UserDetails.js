@@ -1,4 +1,5 @@
 import React from 'react'
+import { PropTypes } from "prop-types";
 
 const UserDetails = ({name, age, children}) => {
     return (
@@ -10,9 +11,16 @@ const UserDetails = ({name, age, children}) => {
     )
 }
 
+// defaultProps
 UserDetails.defaultProps = {
     name: "default-name",
     age: 18
+}
+
+// prop validation | propTypes
+UserDetails.propTypes = {
+    name: PropTypes.string,
+    age: PropTypes.number
 }
 
 export default UserDetails

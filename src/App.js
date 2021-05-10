@@ -6,7 +6,7 @@ function App() {
   return (
     <div className = "App">
 
-    <UserDetails name="Harsh Mistry" age={21}>
+    <UserDetails name={"Harsh Mistry"} age={21}>
       <h3>Information specific to Harsh</h3>
     </UserDetails>
 
@@ -18,7 +18,7 @@ function App() {
     </UserDetails>
 
     <hr/>
-    
+
     <UserDetails/>
 
     </div>
