@@ -6,7 +6,7 @@ function App() {
 
   return (
     <div className = "App">
-      <ConditionalRendering isLoggedIn={false}/>
+      <ConditionalRendering isLoggedIn={true}/>
     </div>
   );
 }

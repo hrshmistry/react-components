@@ -1,19 +1,19 @@
 import React from 'react'
 
 function ConditionalRendering({isLoggedIn}) {
+    let message;
+
     if (isLoggedIn) {
-        return (
-            <div>
-                <h1>you are logged in</h1>
-            </div>
-        )
+        message = <h1>you are logged in</h1>
     } else {
-        return (
-            <div>
-                <h1>please log in</h1>
-            </div>
-        )
+        message = <h1>please log in</h1>
     }
+
+    return (
+        <div>
+            {message}
+        </div>
+    )
 }
 
 export default ConditionalRendering
