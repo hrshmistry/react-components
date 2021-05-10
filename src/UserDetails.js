@@ -1,11 +1,10 @@
 import React from 'react'
 
-function UserDetails(props) {
+// destructuring props when recieving in components
+function UserDetails({name, age, children}) {
     // console.log({props})
     // props are read only!
 
-    // destructuring props
-    const {name, age, children} = props
     return (
         <div>
             <h1>Name: {name}</h1>
