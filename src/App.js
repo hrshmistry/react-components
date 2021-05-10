@@ -2,20 +2,18 @@
 import './App.css';
 import UserDetails from './UserDetails'
 
-let name = "Harsh"
-
 function App() {
   return (
     <div className = "App">
 
-    <UserDetails name="Harsh" age={23}>
-      <h1>Information specific to Harsh</h1>
+    <UserDetails name="Harsh Mistry" age={21}>
+      <h3>Information specific to Harsh</h3>
     </UserDetails>
 
     <hr/>
 
-    <UserDetails name="Kush" age={23}>
-      <h1>Information specific to Kush</h1>
+    <UserDetails name="Kush Mistry" age={19}>
+      <h3>Information specific to Kush</h3>
       <button>Kush's button</button>
     </UserDetails>
 
