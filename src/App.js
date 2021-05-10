@@ -4,7 +4,7 @@ import EventHandling from './EventHandling';
 import UserDetails from './UserDetails'
 
 function App() {
-  const displayName = () => alert("hi harsh");
+  const displayName = (name) => alert("hi " + name);
 
   return (
     <div className = "App">

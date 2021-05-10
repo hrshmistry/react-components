@@ -7,7 +7,7 @@ const UserDetails = ({name, age, children, displayName}) => {
             <h1>Name: {name}</h1>
             <h1>Age: {age}</h1>
             {children}
-            <button onClick = {displayName}>say hi</button>
+            <button onClick = {() => displayName("Harsh")}>say hi</button>
         </div>
     )
 }
