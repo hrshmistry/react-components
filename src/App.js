@@ -1,5 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
+import EventHandling from './EventHandling';
 import UserDetails from './UserDetails'
 
 function App() {
@@ -20,6 +21,10 @@ function App() {
     <hr/>
 
     <UserDetails/>
+
+    <hr/>
+
+    <EventHandling/>
 
     </div>
   );
