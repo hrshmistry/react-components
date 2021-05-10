@@ -1,5 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
+import ConditionalRendering from './ConditionalRendering';
 import EventHandling from './EventHandling';
 import UserDetails from './UserDetails'
 
@@ -9,11 +10,11 @@ function App() {
   return (
     <div className = "App">
 
-    <UserDetails name={"Harsh Mistry"} age={21} displayName={displayName}>
+    {/* <UserDetails name={"Harsh Mistry"} age={21} displayName={displayName}>
       <h3>Information specific to Harsh</h3>
     </UserDetails>
 
-    {/* <hr/>
+    <hr/>
 
     <UserDetails name="Kush Mistry" age={19}>
       <h3>Information specific to Kush</h3>
@@ -22,11 +23,13 @@ function App() {
 
     <hr/>
 
-    <UserDetails/> */}
+    <UserDetails/>
 
     <hr/>
 
-    <EventHandling/>
+    <EventHandling/> */}
+
+    <ConditionalRendering/>
 
     </div>
   );
