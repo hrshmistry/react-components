@@ -18,22 +18,22 @@ function ProductCard({
     }
 
     return (
-        <div className=" card e-comm-card m-1">
-            <img className="img-card" src={imageSrc} alt={imageAlt}/>
-            {isBadge && <small className="badge solid-badge e-comm-badge">
+        <div class=" card e-comm-card m-1">
+            <img class="img-card" src={imageSrc} alt={imageAlt}/>
+            {isBadge && <small class="badge solid-badge e-comm-badge">
                 {badgeName}
             </small>}
-            <div className="e-comm-title">{title}</div>
-            <small className="e-comm-content">
+            <div class="e-comm-title">{title}</div>
+            <small class="e-comm-content">
                 {shortDetail}
             </small>
-            <div className="e-comm-price">
+            <div class="e-comm-price">
                 <small>Rs.{prize} </small>
-                <small className="e-comm-price-cut">Rs.{prizeCut}</small>
-                <small className="e-comm-disc"> ({discount}% OFF)</small>
+                <small class="e-comm-price-cut">Rs.{prizeCut}</small>
+                <small class="e-comm-disc"> ({discount}% OFF)</small>
             </div>
             <button 
-                className="btn btn-primary e-comm-btn" 
+                class="btn btn-primary e-comm-btn" 
                 onClick={() => buttonClickHandler(title)}> 
                     {btnText}
             </button>
