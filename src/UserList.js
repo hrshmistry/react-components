@@ -2,33 +2,13 @@ import React from 'react'
 
 function UserList() {
     // array of objects
-    let users = [
-        {
-            name: "Riya",
-            age: 21,
-            language: "javascript",
-            key: 1
-        },
-        {
-            name: "Nishu",
-            age: 21,
-            language: "C++",
-            key: 2
-        },
-        {
-            name: "Tanvi",
-            age: 21,
-            language: "Perl",
-            key: 3
-        }
-    ]
+    let users = ["Riya", "Nishu", "Tanvi"]
 
     return (
         <div>
-            {users.map(user => {
-                return (<div key = {user.key}>
-                    <h1>Name: {user.name}</h1>
-                    <h1>Age: {user.age}</h1>
+            {users.map((user, index) => {
+                return (<div key = {index}>
+                    <h1>Name: {user}</h1>
                 </div>)
             })}
         </div>
