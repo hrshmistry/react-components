@@ -1,5 +1,12 @@
-.App {
+/* .App {
   text-align: center;
+} */
+
+.center-products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
 }
 
 .App-logo {
@@ -32,6 +39,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
