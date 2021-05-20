@@ -1,12 +1,12 @@
 // import logo from './logo.svg';
 import './App.css';
-import ConditionalRendering from './ConditionalRendering';
+import UserList from "./UserList";
 
 function App() {
 
   return (
     <div className = "App">
-      <ConditionalRendering isLoggedIn={true}/>
+      <UserList/>
     </div>
   );
 }
