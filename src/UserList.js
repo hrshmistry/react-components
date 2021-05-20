@@ -1,6 +1,7 @@
 import React from 'react'
 
 function UserList() {
+    // array
     let users = ["Riya", "Nishu", "Tanvi"]
     return (
         <div>
