@@ -5,7 +5,7 @@ const products = [
       key: uuidv4(),
       imageSrc: "https://bit.ly/3owBG9K",
       imageAlt: "Anouk",
-      title: "BOO",
+      title: "Anouk",
       isBadge: true,
       badgeName: "New",
       shortDetail: "Men B&W Printed Kurta Pyjamas",
