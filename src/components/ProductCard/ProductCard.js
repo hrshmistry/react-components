@@ -1,25 +1,25 @@
 import React from 'react'
 import './ProductCard.css'
 
-function ProductCard({
-    imageSrc, 
+const ProductCard = ({
+    imageSrc,
     imageAlt,
     isBadge,
     badgeName,
     title,
-    shortDetail, 
+    shortDetail,
     prize,
     prizeCut,
     discount,
     btnText,
-}) {
+}) => {
     const buttonClickHandler = (item) => {
         alert(`${item} added to cart!`)
     }
 
     return (
         <div className=" card e-comm-card m-1">
-            <img className="img-card" src={imageSrc} alt={imageAlt}/>
+            <img className="img-card" src={imageSrc} alt={imageAlt} />
             {isBadge && <small className="badge solid-badge e-comm-badge">
                 {badgeName}
             </small>}
@@ -32,10 +32,10 @@ function ProductCard({
                 <small className="e-comm-price-cut">Rs.{prizeCut}</small>
                 <small className="e-comm-disc"> ({discount}% OFF)</small>
             </div>
-            <button 
-                className="btn btn-primary e-comm-btn" 
-                onClick={() => buttonClickHandler(title)}> 
-                    {btnText}
+            <button
+                className="btn btn-primary e-comm-btn"
+                onClick={() => buttonClickHandler(title)}>
+                {btnText}
             </button>
         </div>
     )
